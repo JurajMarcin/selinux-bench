@@ -1,3 +1,11 @@
+# Author: Juraj Marcin <juraj@jurajmarcin.com>
+#
+# Usage: python compute_trans_data.py policy.conf [name-only]
+#
+# policy.conf: policy file
+# name-only: output only file name transitions when this option is present
+
+
 from dataclasses import dataclass, field
 from re import compile
 from sys import argv, stderr
