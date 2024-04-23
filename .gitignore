@@ -1,0 +1,4 @@
+*.o
+
+compute_trans
+file_create
