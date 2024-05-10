@@ -284,6 +284,8 @@ def build_contexts(policy: Policy) -> dict[Type, Context]:
                 role_user[role] = users["sysadm_u"]
             elif len(users) > 0:
                 role_user[role] = list(users.values())[0]
+            elif role.name.endswith("adm_r"):
+                role_user[role] = policy.users["sysadm_u"]
             else:
                 print(f"No user for role {role} ({roles=}, {type_=})", file=stderr)
                 continue
