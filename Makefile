@@ -1,3 +1,5 @@
+CFLAGS += -O2
+
 all: compute_trans file_create
 
 compute_trans: compute_trans.o
